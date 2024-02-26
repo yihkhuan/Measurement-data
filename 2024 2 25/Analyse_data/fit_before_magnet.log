@@ -1,0 +1,164 @@
+
+
+*******************************************************************************
+Sun Feb 25 21:40:02 2024
+
+
+FIT:    data read from 'before_magnet.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [9.18010 : 9.78010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 1.0702962580e+02   0.00e+00  3.16e+02    9.480100e+00   1.018767e-01   2.692190e+01   6.065002e+00
+   7 3.8274553961e+01  -8.25e-01  3.16e-05    9.491106e+00   1.321951e-01   2.825038e+01   8.568418e+00
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 38.2746
+rel. change during last iteration : -8.24553e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.19062
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.41758
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.49111          +/- 0.003389     (0.0357%)
+b               = 0.132195         +/- 0.01154      (8.731%)
+offsetl         = 28.2504          +/- 0.9556       (3.382%)
+Al              = 8.56842          +/- 0.9923       (11.58%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.054  1.000 
+offsetl        -0.037  0.889  1.000 
+Al             -0.040  0.947  0.970  1.000 
+
+
+*******************************************************************************
+Sun Feb 25 21:40:02 2024
+
+
+FIT:    data read from 'before_magnet.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [9.18010 : 9.78010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = Ag / (d * (2 * pi)**(1/2)) * exp(-0.5 * ((x-c) / d)**2) - offsetg
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             offsetg       Ag           
+   0 1.2119388990e+02   0.00e+00  3.03e+02    9.480100e+00   8.489245e-02   2.446213e+01   1.320891e+00
+   7 5.1905853660e+01  -8.70e-01  3.03e-05    9.490805e+00   1.046758e-01   2.491457e+01   1.720880e+00
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 51.9059
+rel. change during last iteration : -8.69512e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.38652
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.92244
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 9.49081          +/- 0.004109     (0.04329%)
+d               = 0.104676         +/- 0.006985     (6.673%)
+offsetg         = 24.9146          +/- 0.6638       (2.664%)
+Ag              = 1.72088          +/- 0.1557       (9.049%)
+
+correlation matrix of the fit parameters:
+                c      d      offset Ag     
+c               1.000 
+d              -0.032  1.000 
+offsetg        -0.007  0.808  1.000 
+Ag             -0.007  0.877  0.927  1.000 
+
+
+*******************************************************************************
+Sun Feb 25 21:40:02 2024
+
+
+FIT:    data read from 'before_magnet.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [9.18010 : 9.48010]
+        #datapoints = 16
+        residuals are weighted equally (unit weight)
+
+function used for fitting: e1(x)
+	e1(x) = h1 * exp(i1 * (x - j1)) - offset1
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   h1            i1            j1            offset1      
+   0 2.6105133818e+02   0.00e+00  3.88e+02    3.520826e+01   3.671997e+00   9.480100e+00   3.611699e+01
+   7 1.2011405054e+01  -1.64e-03  3.88e-05    3.520044e+01   4.559733e+00   9.547929e+00   3.256948e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 12.0114
+rel. change during last iteration : -1.6432e-08
+
+degrees of freedom    (FIT_NDF)                        : 12
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.00048
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.00095
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+h1              = 35.2004          +/- 5.459e+12    (1.551e+13%)
+i1              = 4.55973          +/- 1.104        (24.22%)
+j1              = 9.54793          +/- 3.475e+10    (3.64e+11%)
+offset1         = 32.5695          +/- 3.364        (10.33%)
+
+correlation matrix of the fit parameters:
+                h1     i1     j1     offset 
+h1              1.000 
+i1              0.148  1.000 
+j1              1.000  0.148  1.000 
+offset1        -0.088 -0.979 -0.088  1.000 
+
+
+*******************************************************************************
+Sun Feb 25 21:40:02 2024
+
+
+FIT:    data read from 'before_magnet.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [9.48010 : 9.78010]
+        #datapoints = 16
+        residuals are weighted equally (unit weight)
+
+function used for fitting: e2(x)
+	e2(x) = h2 * exp(i2 * (-x + j2)) - offset2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   h2            i2            j2            offset2      
+   0 3.6514174739e+02   0.00e+00  7.88e+02    3.513871e+01   1.055777e+01   9.480100e+00   2.578247e+01
+   7 1.1641130356e+01  -1.20e-01  7.88e-04    3.513746e+01   4.177649e+00   9.430588e+00   3.326356e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 11.6411
+rel. change during last iteration : -1.19809e-06
+
+degrees of freedom    (FIT_NDF)                        : 12
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.984934
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.970094
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+h2              = 35.1375          +/- 4.785e+12    (1.362e+13%)
+i2              = 4.17765          +/- 1.029        (24.62%)
+j2              = 9.43059          +/- 3.196e+10    (3.389e+11%)
+offset2         = 33.2636          +/- 3.952        (11.88%)
+
+correlation matrix of the fit parameters:
+                h2     i2     j2     offset 
+h2              1.000 
+i2             -0.213  1.000 
+j2             -1.000  0.213  1.000 
+offset2         0.166 -0.983 -0.166  1.000 

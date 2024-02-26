@@ -69,12 +69,9 @@ sprintf("set terminal png size 600,600;") . \
 sprintf("plot '%s.csv' using ($1*1e-9):2 t 'NA data', '%s.csv' using ($1*3.57e-11):(NaN) axes x2y1 t '', l(x) t 'Lorentzian', g(x) t 'Gaussian', [x=A[3]:A[2]] e1(x) t 'Left exponential', [x=A[2]:A[1]] e2(x) t 'Right exponential';",name,name)
 
 array name[6]
-name [1] = "U_resonator_1"
-name [2] = "U_resonator_2"
-name [3] = "U_resonator_3"
-name [4] = "U_resonator_4"
-name [5] = "U_resonator_5"
-name [6] = "U_resonator_6"
+name [1] = "after_magnet"
+name [2] = "before_magnet"
+
 
 ff(name) = sprintf("stats '%s.csv';",name)
 do for [i=1:6] {
