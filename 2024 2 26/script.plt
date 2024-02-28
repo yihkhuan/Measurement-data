@@ -4,7 +4,7 @@ set term qt font "Times-New-Roman,12"
 set datafile separator ','
 
 #obtain the index of the only peak in the data set
-init(name) = sprintf("stats '%s.csv';", name) . \
+init(name) = sprintf("stats '%s.csv' nooutput;", name) . \
 sprintf("set fit logfile './Analyse_data/fit_%s.log';",name) . \
 sprintf("set output './Analyse_data/figs/%s.png';",name)
 
@@ -68,14 +68,29 @@ sprintf("set x2range [A[3] * 0.0357 : A[1] * 0.0357 ];") . \
 sprintf("set terminal png size 600,600;") . \
 sprintf("plot '%s.csv' using ($1*1e-9):2 t 'NA data', '%s.csv' using ($1*3.57e-11):(NaN) axes x2y1 t '', l(x) t 'Lorentzian', g(x) t 'Gaussian', [x=A[3]:A[2]] e1(x) t 'Left exponential', [x=A[2]:A[1]] e2(x) t 'Right exponential';",name,name)
 
+#output the fitted values to a file
+fit_output(name) = sprintf("print '{';") . \
+sprintf("print '\"name\" : \"%s\",';", name) . \
+sprintf("print '\"a\" : [', a,',', a_err, '],';") . \
+sprintf("print '\"b\" : [', b,',', b_err, '],';") . \
+sprintf("print '\"Al\" : [', Al,',', Al_err, '],';") . \
+sprintf("print '\"offsetl\" : [', offsetl,',', offsetl_err, ']';") . \
+sprintf("print '},';")
+
+
+
 array name[6]
 name [1] = "before_magnet"
 name [2] = "after_magnet_1"
 name [3] = "after_magnet_2"
 name [4] = "after_insertion"
 
-ff(name) = sprintf("stats '%s.csv';",name)
-do for [i=1:6] {
+ff(name) = sprintf("stats '%s.csv' nooutput;",name)
+
+set print './Analyse_data/fitted.json'
+print '{'
+print '"fitted_data" : ['
+do for [i=1:4] {
 reset
 eval init(name [i])
 eval get_Values(name [i])
@@ -84,12 +99,14 @@ c = A [2]
 j1 = A [2]
 j2 = A [2]
 eval lfit(name [i])
-eval gfit(name [i])
-eval efit1(name [i])
-eval efit2(name [i])
+eval fit_output(name [i])
 eval always
 eval printing(name [i])
 }
+
+print ']'
+print '}'
+set print
 
 
 
