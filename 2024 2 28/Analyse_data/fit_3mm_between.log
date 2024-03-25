@@ -1,0 +1,205 @@
+
+
+*******************************************************************************
+Tue Mar 19 15:25:57 2024
+
+
+FIT:    data read from '3mm_between.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [9.02000 : 9.62000]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 5.6548869948e+01   0.00e+00  3.32e+02    9.320000e+00   1.005088e-01   3.775241e+01   6.353189e+00
+   6 3.5288597370e+01  -7.06e-01  3.32e-04    9.326529e+00   1.090170e-01   3.907286e+01   7.003903e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 35.2886
+rel. change during last iteration : -7.05999e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.14323
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.30699
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.32653          +/- 0.002968     (0.03182%)
+b               = 0.109017         +/- 0.008482     (7.78%)
+offsetl         = 39.0729          +/- 0.7036       (1.801%)
+Al              = 7.0039           +/- 0.6578       (9.391%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.057  1.000 
+offsetl        -0.030  0.851  1.000 
+Al             -0.035  0.929  0.952  1.000 
+
+
+*******************************************************************************
+Sun Mar 24 11:38:41 2024
+
+
+FIT:    data read from '3mm_between.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [9.02000 : 9.62000]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 5.6548869948e+01   0.00e+00  3.32e+02    9.320000e+00   1.005088e-01   3.775241e+01   6.353189e+00
+   6 3.5288597370e+01  -7.06e-01  3.32e-04    9.326529e+00   1.090170e-01   3.907286e+01   7.003903e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 35.2886
+rel. change during last iteration : -7.05999e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.14323
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.30699
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.32653          +/- 0.002968     (0.03182%)
+b               = 0.109017         +/- 0.008482     (7.78%)
+offsetl         = 39.0729          +/- 0.7036       (1.801%)
+Al              = 7.0039           +/- 0.6578       (9.391%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.057  1.000 
+offsetl        -0.030  0.851  1.000 
+Al             -0.035  0.929  0.952  1.000 
+
+
+*******************************************************************************
+Sun Mar 24 11:39:23 2024
+
+
+FIT:    data read from '3mm_between.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [9.02000 : 9.62000]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 5.6548869948e+01   0.00e+00  3.32e+02    9.320000e+00   1.005088e-01   3.775241e+01   6.353189e+00
+   6 3.5288597370e+01  -7.06e-01  3.32e-04    9.326529e+00   1.090170e-01   3.907286e+01   7.003903e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 35.2886
+rel. change during last iteration : -7.05999e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.14323
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.30699
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.32653          +/- 0.002968     (0.03182%)
+b               = 0.109017         +/- 0.008482     (7.78%)
+offsetl         = 39.0729          +/- 0.7036       (1.801%)
+Al              = 7.0039           +/- 0.6578       (9.391%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.057  1.000 
+offsetl        -0.030  0.851  1.000 
+Al             -0.035  0.929  0.952  1.000 
+
+
+*******************************************************************************
+Sun Mar 24 11:49:23 2024
+
+
+FIT:    data read from '3mm_between.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [9.02000 : 9.62000]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 5.6548869948e+01   0.00e+00  3.32e+02    9.320000e+00   1.005088e-01   3.775241e+01   6.353189e+00
+   6 3.5288597370e+01  -7.06e-01  3.32e-04    9.326529e+00   1.090170e-01   3.907286e+01   7.003903e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 35.2886
+rel. change during last iteration : -7.05999e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.14323
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.30699
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.32653          +/- 0.002968     (0.03182%)
+b               = 0.109017         +/- 0.008482     (7.78%)
+offsetl         = 39.0729          +/- 0.7036       (1.801%)
+Al              = 7.0039           +/- 0.6578       (9.391%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.057  1.000 
+offsetl        -0.030  0.851  1.000 
+Al             -0.035  0.929  0.952  1.000 
+
+
+*******************************************************************************
+Sun Mar 24 12:10:21 2024
+
+
+FIT:    data read from '3mm_between.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [9.02000 : 9.62000]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 5.6548869948e+01   0.00e+00  3.32e+02    9.320000e+00   1.005088e-01   3.775241e+01   6.353189e+00
+   6 3.5288597370e+01  -7.06e-01  3.32e-04    9.326529e+00   1.090170e-01   3.907286e+01   7.003903e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 35.2886
+rel. change during last iteration : -7.05999e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.14323
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.30699
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.32653          +/- 0.002968     (0.03182%)
+b               = 0.109017         +/- 0.008482     (7.78%)
+offsetl         = 39.0729          +/- 0.7036       (1.801%)
+Al              = 7.0039           +/- 0.6578       (9.391%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.057  1.000 
+offsetl        -0.030  0.851  1.000 
+Al             -0.035  0.929  0.952  1.000 
