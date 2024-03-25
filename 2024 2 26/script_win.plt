@@ -22,7 +22,7 @@ sprintf("set key font 'Times-New-Roman,14';")
 #print  STATS_index_max_y
 
 #obtain the corresponding frequency depending on the index obtained
-getValue(row,col,filename) = system('awk ''{if (NR == '.row.') print $'.col.'}'' '.filename.'')
+getValue(row,col,filename) = system('awk "{if (NR == '.row.') print $'.col.'}" '.filename.'')
 
 #selecting the window
 dw = 15
