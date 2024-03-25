@@ -37,9 +37,8 @@ reprinting(name) = sprintf("replot '%s.txt' using 1:2 t '%s';",name,name)
 
 #output the fitted values to a file
 fit_output(name) = sprintf("print '{';") . \
-sprintf("print '\"name\" : \"%s\",';", name) . \
 sprintf("print '\"m\" : [', m,',', m_err, '],';") . \
-sprintf("print '\"c\" : [', c,',', c_err, '],';") . \
+sprintf("print '\"c\" : [', c,',', c_err, ']';") . \
 sprintf("print '},';")
 
 array name[5]
@@ -49,9 +48,9 @@ name [3] = "electromagnet+NdFeB-small"
 
 ff(name) = sprintf("stats '%s.txt' nooutput;",name)
 
-#set print './Analyse_data/fitted.json'
+set print './Analyse_data/current.json'
 print '{'
-print '"fitted_data" : ['
+print '"',name [1],'"', ' :'
 
 array g[3]
 array h[3]
@@ -70,6 +69,7 @@ do for [i = 2:3] {
 reset
 eval init(name [i])
 eval linearfit(name [i])
+print '"',name [i],'"', ' :'
 eval fit_output(name [i])
 eval reprinting(name [i])
 g[i] = m

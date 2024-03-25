@@ -1,0 +1,20 @@
+{
+"electromagnet" :
+{
+"name" : "electromagnet",
+"m" : [51.8908977258961,0.200441974405685],
+"c" : [11.1172600607921,0.686577769110875]
+},
+"electromagnet+NdFeB-large" :
+{
+"name" : "electromagnet+NdFeB-large",
+"m" : [24.5423873956685,0.295222091700878],
+"c" : [317.905657522945,0.20705874172621]
+},
+"electromagnet+NdFeB-small" :
+{
+"name" : "electromagnet+NdFeB-small",
+"m" : [35.5016458879718,0.831726756059318],
+"c" : [232.008836189836,1.93796753669073]
+}
+}
