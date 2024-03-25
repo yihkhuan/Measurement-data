@@ -17,7 +17,7 @@ import json
 # f.close()
 
 ## A nested dictionary
-f = open('json_try.json')
+f = open("./json_try.json")
 dictionary = json.load(f)
 print(dictionary['x'].get('name'))
 
