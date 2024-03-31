@@ -1,0 +1,1435 @@
+
+
+*******************************************************************************
+Tue Mar 26 03:38:53 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 03:57:53 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 03:59:19 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 04:00:16 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 04:00:47 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 04:01:43 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:44:00 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:44:30 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:45:05 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:45:27 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:45:50 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:46:12 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:46:40 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:47:20 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:47:39 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:48:03 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:48:22 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:48:49 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:49:12 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:49:54 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:52:04 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:53:50 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:58:59 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:59:19 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 09:59:39 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 10:00:14 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 10:00:40 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 10:03:36 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 10:17:22 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 10:17:49 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 10:22:50 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 10:23:04 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 10:23:21 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 10:23:41 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 
+
+
+*******************************************************************************
+Thu Mar 28 10:27:14 2024
+
+
+FIT:    data read from 'resonator-4.csv' u ($1*1e-9):2
+        format = x:z
+        x range restricted to [8.98010 : 9.58010]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = Al / pi * (b / ((x - a)**2 + b**2)) - offsetl
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0561698641e+03   0.00e+00  1.04e+02    9.280100e+00   5.000000e-01   4.000000e+01   3.500000e+01
+  15 2.1687900547e+01  -3.30e-01  1.04e-05    9.284131e+00   1.224147e-01   3.553730e+01   6.529725e+00
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 21.6879
+rel. change during last iteration : -3.29568e-06
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.896245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.803256
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.28413          +/- 0.002975     (0.03204%)
+b               = 0.122415         +/- 0.009421     (7.696%)
+offsetl         = 35.5373          +/- 0.6448       (1.814%)
+Al              = 6.52973          +/- 0.6417       (9.828%)
+
+correlation matrix of the fit parameters:
+                a      b      offset Al     
+a               1.000 
+b              -0.048  1.000 
+offsetl        -0.025  0.875  1.000 
+Al             -0.030  0.940  0.964  1.000 

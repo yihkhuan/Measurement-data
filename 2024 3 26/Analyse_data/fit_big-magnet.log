@@ -1,0 +1,340 @@
+
+
+*******************************************************************************
+Tue Mar 26 03:24:59 2024
+
+
+FIT:    data read from 'big-magnet.csv' u 1:2
+        format = x:z
+BREAK: No data to fit
+
+*******************************************************************************
+Tue Mar 26 03:27:06 2024
+
+
+FIT:    data read from 'big-magnet.csv' u 1:2
+        format = x:z
+BREAK: No data to fit
+
+*******************************************************************************
+Tue Mar 26 03:28:01 2024
+
+
+FIT:    data read from 'big-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 7.0038865990e+05   0.00e+00  3.54e+01    1.000000e+00   5.000000e+01
+   5 1.0017701364e+00  -2.61e-02  3.54e-04    2.905276e+01   2.898113e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00177
+rel. change during last iteration : -2.61276e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.353866
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.125221
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 29.0528          +/- 0.1902       (0.6545%)
+c               = 289.811          +/- 0.1993       (0.06875%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.827  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 03:28:28 2024
+
+
+FIT:    data read from 'big-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 7.0038865990e+05   0.00e+00  3.54e+01    1.000000e+00   5.000000e+01
+   5 1.0017701364e+00  -2.61e-02  3.54e-04    2.905276e+01   2.898113e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00177
+rel. change during last iteration : -2.61276e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.353866
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.125221
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 29.0528          +/- 0.1902       (0.6545%)
+c               = 289.811          +/- 0.1993       (0.06875%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.827  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 06:46:37 2024
+
+
+FIT:    data read from 'big-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 7.0038865990e+05   0.00e+00  3.54e+01    1.000000e+00   5.000000e+01
+   5 1.0017701364e+00  -2.61e-02  3.54e-04    2.905276e+01   2.898113e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00177
+rel. change during last iteration : -2.61276e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.353866
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.125221
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 29.0528          +/- 0.1902       (0.6545%)
+c               = 289.811          +/- 0.1993       (0.06875%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.827  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 06:46:51 2024
+
+
+FIT:    data read from 'big-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 7.0038865990e+05   0.00e+00  3.54e+01    1.000000e+00   5.000000e+01
+   5 1.0017701364e+00  -2.61e-02  3.54e-04    2.905276e+01   2.898113e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00177
+rel. change during last iteration : -2.61276e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.353866
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.125221
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 29.0528          +/- 0.1902       (0.6545%)
+c               = 289.811          +/- 0.1993       (0.06875%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.827  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 06:47:40 2024
+
+
+FIT:    data read from 'big-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 7.0038865990e+05   0.00e+00  3.54e+01    1.000000e+00   5.000000e+01
+   5 1.0017701364e+00  -2.61e-02  3.54e-04    2.905276e+01   2.898113e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00177
+rel. change during last iteration : -2.61276e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.353866
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.125221
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 29.0528          +/- 0.1902       (0.6545%)
+c               = 289.811          +/- 0.1993       (0.06875%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.827  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 07:27:40 2024
+
+
+FIT:    data read from 'big-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 7.0038865990e+05   0.00e+00  3.54e+01    1.000000e+00   5.000000e+01
+   5 1.0017701364e+00  -2.61e-02  3.54e-04    2.905276e+01   2.898113e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00177
+rel. change during last iteration : -2.61276e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.353866
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.125221
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 29.0528          +/- 0.1902       (0.6545%)
+c               = 289.811          +/- 0.1993       (0.06875%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.827  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 07:27:52 2024
+
+
+FIT:    data read from 'big-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 7.0038865990e+05   0.00e+00  3.54e+01    1.000000e+00   5.000000e+01
+   5 1.0017701364e+00  -2.61e-02  3.54e-04    2.905276e+01   2.898113e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00177
+rel. change during last iteration : -2.61276e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.353866
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.125221
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 29.0528          +/- 0.1902       (0.6545%)
+c               = 289.811          +/- 0.1993       (0.06875%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.827  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 07:29:06 2024
+
+
+FIT:    data read from 'big-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 7.0038865990e+05   0.00e+00  3.54e+01    1.000000e+00   5.000000e+01
+   5 1.0017701364e+00  -2.61e-02  3.54e-04    2.905276e+01   2.898113e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00177
+rel. change during last iteration : -2.61276e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.353866
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.125221
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 29.0528          +/- 0.1902       (0.6545%)
+c               = 289.811          +/- 0.1993       (0.06875%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.827  1.000 
+
+
+*******************************************************************************
+Tue Mar 26 07:29:19 2024
+
+
+FIT:    data read from 'big-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 7.0038865990e+05   0.00e+00  3.54e+01    1.000000e+00   5.000000e+01
+   5 1.0017701364e+00  -2.61e-02  3.54e-04    2.905276e+01   2.898113e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00177
+rel. change during last iteration : -2.61276e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.353866
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.125221
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 29.0528          +/- 0.1902       (0.6545%)
+c               = 289.811          +/- 0.1993       (0.06875%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.827  1.000 
