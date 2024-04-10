@@ -24,16 +24,16 @@ y(x) = m * x + c
 m = 1
 c = 50
 
-linearfit(name) = sprintf("fit y(x) '%s.txt' u 3:4 via m,c;",name)
+linearfit(name) = sprintf("fit y(x) '%s.txt' u 1:2 via m,c;",name)
 
 
 #plot the window showing the peak
 #set terminal png size 1000,1000
 setting = sprintf("set x2tics;") . sprintf("set xtics nomirror;")
 printing(name) = sprintf("set terminal png size 600,600;") . \
-sprintf("plot '%s.txt' using 3:4 t '%s';",name,name)
+sprintf("plot '%s.txt' using 1:2 t '%s';",name,name)
 
-reprinting(name) = sprintf("replot '%s.txt' using 3:4 t '%s';",name,name)
+reprinting(name) = sprintf("replot '%s.txt' using 1:2 t '%s';",name,name)
 
 #output the fitted values to a file
 fit_output(name) = sprintf("print '{';") . \
@@ -42,9 +42,9 @@ sprintf("print '\"c\" : [', c,',', c_err, ']';") . \
 sprintf("print '},';")
 
 array name[5]
-name [1] = "0mm"
-name [2] = "3mm"
-name [3] = "6mm"
+name [1] = "big-magnet"
+#name [2] = "small-magnet"
+#name [3] = "electromagnet+NdFeB-small"
 
 ff(name) = sprintf("stats '%s.txt' nooutput;",name)
 
@@ -64,36 +64,21 @@ eval printing(name [1])
 g[1] = m
 h[1] = c
 y1(x) = g[1] * x + h[1]
-
 set output './Analyse_data/figs/current.png'
 replot y1(x) t ""
 
-print '"',name [2],'"', ' :'
-reset
-eval init(name [2])
-eval linearfit(name [2])
-eval fit_output(name [2])
-eval always
-eval reprinting(name [2])
-g[2] = m
-h[2] = c
-y2(x) = g[2] * x + h[2]
-set output './Analyse_data/figs/current.png'
-replot y2(x) t ""
-
-print '"',name [3],'"', ' :'
-reset
-eval init(name [3])
-eval linearfit(name [3])
-eval fit_output(name [3])
-eval always
-eval reprinting(name [3])
-g[3] = m
-h[3] = c
-y3(x) = g[3] * x + h[3]
-
-set output './Analyse_data/figs/current.png'
-replot y3(x) t ""
+# print '"',name [2],'"', ' :'
+# reset
+# eval init(name [2])
+# eval linearfit(name [2])
+# eval fit_output(name [2])
+# eval always
+# eval reprinting(name [2])
+# g[2] = m
+# h[2] = c
+# y2(x) = g[2] * x + h[2]
+# set output './Analyse_data/figs/current.png'
+# replot y2(x) t ""
 
 print '}'
 set print
