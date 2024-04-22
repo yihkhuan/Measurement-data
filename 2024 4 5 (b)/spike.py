@@ -51,12 +51,13 @@ def average_loss_list(current: float) -> tuple:
     loss = np.average(loss,axis=1)
     return (freq,loss)
 
-def esrcontour():
+def esrcontour(magnet_name, fitting = False, xlim = (0,0), ylim = (0,0)):
     current = current_list()
     current = np.array(current)
     # print(current[0])
     freq, loss_0 = loss_list(current[0])
-    magnetic = 19.713 * current[1:] + 224.92
+    # magnetic = 19.713 * current[1:] + 224.92
+    magnetic = current_mag(current[1:],magnet_name)
     B, F = np.meshgrid(magnetic,freq)
     lossmesh = np.array([])
     for i in current[1:]:
@@ -66,12 +67,40 @@ def esrcontour():
     lossmesh = np.reshape(lossmesh,(-1,freq.shape[-1]))
 
     fig, ax = plt.subplots()
-    cp = ax.contourf(B, F, lossmesh.transpose(), cmap='rainbow', levels=100, zorder=1,vmax=0.15)
+    if fitting == True:
+        with open("./fitting_params.json","r") as f:
+            data = json.load(f)
+        
+        magnetic_field = np.ndarray([])
+        resonance_freq = np.ndarray([])
+        for current, obj in data.items():
+
+            mag = current_mag(float(current), magnet_name)
+            magnetic_field = np.append(magnetic_field,mag)
+        
+            frequency = obj["resonance-frequency"]
+            resonance_freq = np.append(resonance_freq,frequency)
+        
+        resonance_freq = np.delete(resonance_freq,[0])
+        magnetic_field = np.delete(magnetic_field,[0])
+        m,c = fit_linear(resonance_freq,magnetic_field)
+
+        freq_pts = np.arange(9,11)
+        mag_pts = freq_pts * m + c
+        # print(magnetic_field.size)
+        # print(resonance_freq.size)
+        ax.plot(magnetic_field,resonance_freq,"ko")
+        ax.plot(mag_pts, freq_pts, "k--", lw=2)
+
+
+    cp = ax.contourf(B, F, lossmesh.transpose(), cmap='rainbow', levels=100, zorder=1)
     cb = plt.colorbar(cp,orientation = 'vertical')
     cb.ax.tick_params(labelsize = 16)
     cb.set_label(label="absorption (dB)", fontsize=20)
-    ax.set_xlim((325,340))
-    ax.set_ylim((9.35,9.6))
+    if xlim != (0,0):
+        ax.set_xlim(xlim)
+    if ylim != (0,0):
+        ax.set_ylim(ylim)
     ax.set_xlabel("magnetic field (mT)",fontsize=20)
     ax.set_ylabel("frequency (GHz)",fontsize=20)
     ax.tick_params(axis='both',which='major',labelsize=13)
@@ -82,7 +111,7 @@ def esrcontour():
     pass
 
 def current_list():
-    currents = np.arange(0,600) / 100
+    currents = np.arange(0,630) / 100
     current = []
     for i in tqdm(currents):
         finding = find("%.2fA.csv"%i,"./")
@@ -95,7 +124,7 @@ def current_list():
 def find_all(name: str, path: str):
     result = []
     for root, dirs, files in os.walk(path):
-        if name in files:
+        if files.__contains__(name):
             result.append(os.path.join(root, name))
     return result
 
@@ -131,21 +160,21 @@ def UTM_2D_plot(x:np.ndarray, y:np.ndarray, title:str, xlabel:str, ylabel:str, f
     plt.subplots_adjust(bottom=0.2,left=0.2)
     plt.savefig("./figs/" + filename)
 
-def current_mag(current:float) -> float:
-    with open('./Analyse_data/fitted_current.json', 'r') as f:
+def current_mag(current, magnet_name):
+    with open('./Analyse_data/current.json', 'r') as f:
         fitted_current = json.load(f)
 
-        m = fitted_current[' small-magnet '].get('m')[0]
-        c = fitted_current[' small-magnet '].get('c')[0]
+        m = fitted_current[magnet_name].get('m')[0]
+        c = fitted_current[magnet_name].get('c')[0]
     
     return m * current + c 
 
-def mag_current(mag:float) -> float:
-    with open('./Analyse_data/fitted_current.json', 'r') as f:
+def mag_current(mag,magnet_name):
+    with open('./Analyse_data/current.json', 'r') as f:
         fitted_current = json.load(f)
 
-        m = fitted_current[' small-magnet '].get('m')[0]
-        c = fitted_current[' small-magnet '].get('c')[0]
+        m = fitted_current[magnet_name].get('m')[0]
+        c = fitted_current[magnet_name].get('c')[0]
     
     return (mag - c)/m 
 
@@ -153,25 +182,77 @@ def fit_linear(x: np.ndarray, y: np.ndarray) -> tuple:
     gradient, intercept, r, p, se = linregress(x, y)
     return (gradient, intercept)
 
-def get_g(parameter_address: str):
+def get_g(parameter_address: str, magnet_name):
     with open(parameter_address,"r") as f:
         data = json.load(f)
     
     magnetic_field = np.ndarray([])
     resonance_freq = np.ndarray([])
     for current, obj in data.items():
-        mag = current_mag(float(current))
+        mag = current_mag(float(current), magnet_name)
         magnetic_field = np.append(magnetic_field,mag)
     
         frequency = obj["resonance-frequency"]
         resonance_freq = np.append(resonance_freq,frequency)
     
+    resonance_freq = np.delete(resonance_freq,[0])
+    magnetic_field = np.delete(magnetic_field,[0])
+    
     m,c = fit_linear(resonance_freq,magnetic_field)
     g = m / PLANK_CONSTANT * BOHR_MAGNETON /GHz*mT
-    return 1 / g
+    return (1 / g ,m, c)
     
+def absortion_magnetic_plot(current: float, resonance_freq:float, loss_0:float):
+    
+    
+    try: freq, loss_ave = loss_list(current)
+    except: print("failed")
+    loss_ave = loss_ave - loss_0
+    # print(freq)
+    index_resonant = np.where(freq==resonance_freq)[0][0]
+    current_out = np.append(current_out,current)
+    transmission = np.append(transmission,loss_ave[index_resonant])
+    return (current_out, transmission)
+    
+def resonator_fit(address: str):
+    with open(address) as f:
+        data = f.read()
+    
+    pass
 
-    
+def current_fit():
+    pass
+
+def get_resonator_params(filenames: list, loss_0):
+    dict_list = {}
+
+    for name in filenames:
+        freq, loss_ave = loss_list(name)
+        absorption = loss_0 - loss_ave
+
+        params = lorentzian_fit(freq, absorption)
+        dict_list.update({"%.2f" % (name): {
+                            "amplitude"           : params[0],
+                            "bandwidth"           : params[1],
+                            "resonance-frequency" : params[2],
+                            "offset"              : params[3]
+                            }
+                        })
+        
+        l = lorentz(freq,*params)
+        plt.figure()
+        # fig[filenames.index(name)], ax[filenames.index(name)] = plt.subplots()
+        plt.scatter(freq,absorption)
+        
+        UTM_2D_plot(freq,l,
+                    title = "signal fitting",
+                    xlabel = "frequency, GHz",
+                    ylabel = "absorption",
+                    filename = "fitting %.2fA.png" % (name),
+                    )
+        
+    with open("fitting_params.json", "w") as outfile:
+        json.dump(dict_list,outfile)
 
 # print(find("5.24.csv",'./'))
 # for root,dirs,files in os.walk("./"):
@@ -179,7 +260,7 @@ def get_g(parameter_address: str):
 # print(current_list())
 # current = current_list()
 # current = np.array(current)
-# freq, loss_0 = loss(current[0])
+# freq, loss_0 = loss_list(current[0])
 # print(freq.shape[-1])
 
 # x = np.linspace(8.5,10,100)
@@ -195,4 +276,7 @@ def get_g(parameter_address: str):
 # plt.plot(x,fit_y)
 
 # plt.show()
-print(get_g("./fitting_params.json"))
+# print(get_g("./fitting_params.json", ' big-magnet '))
+
+# esrcontour(' big-magnet ', True, (320,345), (9.3,9.9))
+# esrcontour(' big-magnet ')
