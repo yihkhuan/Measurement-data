@@ -192,7 +192,7 @@ def current_list(start: float = 0, end: float = 15):
             pass
     return current
 
-def esrcontour(magnet_name, fitting = False, xlim = (0,0), ylim = (0,0)):
+def esr_contour(magnet_name, fitting = False, xlim = (0,0), ylim = (0,0)):
     current = current_list()
     current = np.array(current)
 
@@ -283,33 +283,70 @@ def lorentz(x: np.ndarray, Al:float, b:float, a:float, offsetl:float) -> np.ndar
 lorentz = lambda x, Al, b, a, offsetl: Al / np.pi * (b / ((x - a)**2 + b**2)) + offsetl
 
 def UTM_3D_plot(x: np.ndarray, y: np.ndarray, lossmesh: np.ndarray, ax, 
-                colourbar_label: str, xlabel: str, ylabel: str, title: str,
-                sec_xlabel: str, x2secx, secx2x, 
-                sec_ylabel: str, y2secy, secy2y,
+                **kwargs
                 ):
-    cp = ax.contourf(x, y, lossmesh.transpose(), cmap='rainbow', levels=100, zorder=1, vmin = 0)
+    
+    cp = ax.contourf(x, y, lossmesh.transpose(), cmap='rainbow', levels=100, zorder=1, 
+                     vmin = kwargs.get('vmin'), vmin = kwargs.get('vmax'))
+
+    ## setting up colourbar
+    colourbar_label = kwargs.get('cblabel')
     cb = plt.colorbar(cp,orientation = 'vertical')
     cb.ax.tick_params(labelsize = 16)
     cb.set_label(label= colourbar_label, fontsize=20)
 
+    ##setting up x and y label
+    xlabel, ylabel = kwargs.get('xlabel'), kwargs.get('ylabel')
     ax.set_xlabel(xlabel,fontsize=20)
     ax.set_ylabel(ylabel,fontsize=20)
     ax.tick_params(axis='both',which='major',labelsize=13)
+
+    ##setting up title
+    title = kwargs.get('title')
     ax.set_title(title, fontsize = 25)
+
+    ##setting up x and y lim
+    ax.set_xlim(kwargs.get('xlim'))
+    ax.set_ylim(kwargs.get('ylim'))
+
+
+    ##setting up secx axis
+    sec_xlabel = kwargs.get('x2label')
+    conversion = kwargs.get('x2secx'), kwargs.get('secx2x')
+    try:
+        secax = ax.secondary_xaxis('top', functions= conversion)
+    except:
+        secax = ax.secondary_xaxis('top', functions= None)
+    secax.set_xlabel(sec_xlabel,fontsize=20)
+    secax.tick_params(axis='x',which='major',labelsize=13)
+
+    ##setting up secy axis
+    sec_ylabel = kwargs.get('y2label')
+    conversion = kwargs.get('y2secy'), kwargs.get('secy2y')
+    try:   
+        secay = ax.secondary_xaxis('right', functions= conversion)
+    except:
+        secay = ax.secondary_xaxis('right', functions= None)
+    secay.set_xlabel(sec_ylabel,fontsize=20)
+    secay.tick_params(axis='y',which='major',labelsize=13)
+    
+    return ax
+
     
 
+def line_on_3D(ax, parameters: tuple, start: float =0, end: float =500, label: str = None, colour: str = None): 
+    m, c, *r = parameters
+    mag_pts = np.arange(start, end)
+    freq_pts = mag_pts * m + c
+    ax.plot(mag_pts, freq_pts, marker = "--", lw=2, label = label, color= colour)
+    
+    return ax
 
-    secax = ax.secondary_xaxis('top', functions=(x2secx,secx2x))
-    secax.set_xlabel('',fontsize=20)
-    secax.tick_params(axis='x',which='major',labelsize=13)
+def pts_on_3D(ax, x: np.ndarray, y: np.ndarray, label: str = None, colour: str = None): 
 
-    secay = ax.secondary_xaxis('right', functions=(y2secy,secy2y))
-    secax.set_xlabel('current (A)',fontsize=20)
-    secax.tick_params(axis='x',which='major',labelsize=13)
+    ax.plot(x, y, marker = "o", lw=2, label = label, color= colour)
+    return ax
 
-def line_on_3D(fig, ax) -> tuple: 
-
-    pass
 
 self.magnet()
 self.mag_min()
