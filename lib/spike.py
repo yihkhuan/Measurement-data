@@ -10,6 +10,7 @@ GHZ_UNIT = 1e9
 MT_UNIT = 1e-3
 PLANK_CONSTANT = 6.626e-34
 BOHR_MAGNETON = 9.27e-24
+EXPECTED_GRADIENT = 2.0036 * BOHR_MAGNETON / PLANK_CONSTANT * MT_UNIT / GHZ_UNIT
 
 
 ## General control functions
@@ -209,7 +210,7 @@ def esr_contour(magnet_name, fitting = False, xlim = (0,0), ylim = (0,0)):
     lossmesh = np.reshape(lossmesh,(-1,freq.shape[-1]))
     ##Plotting
     fig, ax = plt.subplots()
-    if fitting == True:
+    try:
         with open("./fitting_params.json","r") as f:
             data = json.load(f)
         
@@ -223,42 +224,17 @@ def esr_contour(magnet_name, fitting = False, xlim = (0,0), ylim = (0,0)):
             resonance_freq = np.append(resonance_freq,frequency)
 
 
-        m,c,*r = fit_linear(magnetic_field, resonance_freq)
+        parameters = fit_linear(magnetic_field, resonance_freq)
 
-        mag_pts = np.arange(300,400)
-        freq_pts = mag_pts * m + c
+        ax = line_on_3D(ax, linear, parameters,
+                    label = "line of resonance",colour="black")
+        ax = pts_on_3D(ax, magnetic_field, resonance_freq, 
+                    label = "expected highest absorption", colour = "black")
+    except:
+        pass
 
-        ax.plot(magnetic_field,resonance_freq,"ko")
-        ax.plot(mag_pts, freq_pts, "k--", lw=2)
 
-    cp = ax.contourf(B, F, lossmesh.transpose(), cmap='rainbow', levels=100, zorder=1, vmin = 0)
-    cb = plt.colorbar(cp,orientation = 'vertical')
-    cb.ax.tick_params(labelsize = 16)
-    cb.set_label(label="absorption (dB)", fontsize=20)
-    if xlim != (0,0):
-        ax.set_xlim(xlim)
-    if ylim != (0,0):
-        ax.set_ylim(ylim)
-    ax.set_xlabel("magnetic field (mT)",fontsize=20)
-    ax.set_ylabel("frequency (GHz)",fontsize=20)
-    ax.tick_params(axis='both',which='major',labelsize=13)
-    ax.set_title("Contour plot of ESR signal", fontsize = 25)
-    # print(magnet_name)
-    mag2current = lambda x: mag_current(x, magnet_name)
-    current2mag = lambda x: current_mag(x , magnet_name)
-    # print(magnet_name)
-    secax = ax.secondary_xaxis('top', functions=(mag2current,current2mag))
-    secax.set_xlabel('current (A)',fontsize=20)
-    secax.tick_params(axis='x',which='major',labelsize=13)
-
-    # m = fitted_current[magnet_name].get('m')[0]
-    m,c,*r = fit_linear(magnetic_field, resonance_freq)
-
-    mag_pts = np.arange(300,400)
-    freq_pts = mag_pts * m + c
-
-    ax.plot(magnetic_field,resonance_freq,"ko")
-    ax.plot(mag_pts, freq_pts, "k--", lw=2)
+    UTM_3D_plot(B, F, lossmesh, ax, esr_lib, secx2x = current_mag, x2secx = mag_current)
 
     ###True Values
     with open("./Analyse_data/fitted.json","r") as g:
@@ -266,88 +242,165 @@ def esr_contour(magnet_name, fitting = False, xlim = (0,0), ylim = (0,0)):
     
     resonator_freq = resonator["fitted_data"][0].get('a')[0]
 
+    ax = line_on_3D(ax, linear, (EXPECTED_GRADIENT,0),
+                    label = "expected resonance belt",colour="red")
+    ax = pts_on_3D(ax, expected_mag(resonator_freq), resonator_freq, 
+                   label = "expected highest absorption", colour = "red")
     
-    expected_freq = lambda mag: mag * 2.0036 * BOHR_MAGNETON / PLANK_CONSTANT * mT / GHz
-    expected_mag = lambda freq: freq / (2.0036 * BOHR_MAGNETON / PLANK_CONSTANT * mT / GHz)
-    ax.plot(mag_pts, expected_freq(mag_pts), "r--", lw=2)
-    ax.plot(expected_mag(resonator_freq),resonator_freq,"ro")
-
     plt.tight_layout()
     # magnet_name = magnet_name.replace(magnet_name[-4:],"")
     plt.savefig("./figs/ESR_contour_full_" + magnet_name + ".png")
+    plt.close()
     pass
 
-def lorentz(x: np.ndarray, Al:float, b:float, a:float, offsetl:float) -> np.ndarray:
-    return Al / np.pi * (b / ((x - a)**2 + b**2)) + offsetl
+# def lorentz(x: np.ndarray, Al:float, b:float, a:float, offsetl:float) -> np.ndarray:
+#     return Al / np.pi * (b / ((x - a)**2 + b**2)) + offsetl
 
-lorentz = lambda x, Al, b, a, offsetl: Al / np.pi * (b / ((x - a)**2 + b**2)) + offsetl
 
-def UTM_3D_plot(x: np.ndarray, y: np.ndarray, lossmesh: np.ndarray, ax, 
+def UTM_3D_plot(x: np.ndarray, y: np.ndarray, lossmesh: np.ndarray, ax: plt.Axes, *,
+                cmap: str = 'rainbow',  # Colormap for the contour plot
+                levels: int = 100,  # Number of contour levels
+                fontsize: int = 20,  # Font size for labels and title
+                ticksize: int = 13,  # Font size for major ticks
                 **kwargs
                 ):
-    
-    cp = ax.contourf(x, y, lossmesh.transpose(), cmap='rainbow', levels=100, zorder=1, 
-                     vmin = kwargs.get('vmin'), vmin = kwargs.get('vmax'))
+    """
+    This function creates a 3D contour plot with optional customizations and secondary axes.
 
-    ## setting up colourbar
-    colourbar_label = kwargs.get('cblabel')
-    cb = plt.colorbar(cp,orientation = 'vertical')
-    cb.ax.tick_params(labelsize = 16)
-    cb.set_label(label= colourbar_label, fontsize=20)
+    Args:
+        x: A numpy array of x-coordinates.
+        y: A numpy array of y-coordinates.
+        lossmesh: A numpy array of loss values.
+        ax: A matplotlib axes object.
+        cmap (str, optional): Colormap for the contour plot (default: 'rainbow').
+        levels (int, optional): Number of contour levels (default: 100).
 
-    ##setting up x and y label
-    xlabel, ylabel = kwargs.get('xlabel'), kwargs.get('ylabel')
-    ax.set_xlabel(xlabel,fontsize=20)
-    ax.set_ylabel(ylabel,fontsize=20)
-    ax.tick_params(axis='both',which='major',labelsize=13)
+    Kwargs:
+        vmin (float, optional): Minimum value for the colormap.
+        vmax (float, optional): Maximum value for the colormap.
+        cblabel (str, optional): Label for the colorbar.
+        xlabel (str, optional): Label for the x-axis.
+        ylabel (str, optional): Label for the y-axis.
+        title (str, optional): Title for the plot.
+        fontsize (int, optional): Font size for labels and title (default: 20).
+        ticksize (int, optional): Font size for major ticks (default: 13).
+        xlim (tuple[float, float], optional): Limits for the x-axis.
+        ylim (tuple[float, float], optional): Limits for the y-axis.
+        x2label (str, optional): Label for the secondary x-axis.
+        y2label (str, optional): Label for the secondary y-axis.
+        x2secx (callable, optional): Function to convert primary x-values to secondary x-values.
+        secx2x (callable, optional): Function to convert secondary x-values to primary x-values (for interactive panning/zooming).
+        y2secy (callable, optional): Function to convert primary y-values to secondary y-values.
+        secy2y (callable, optional): Function to convert secondary y-values to primary y-values (for interactive panning/zooming).
 
-    ##setting up title
+    Returns:
+        The matplotlib axes object with the plot.
+    """
+
+    # Value range for colormap
+    vmin = kwargs.get('vmin')
+    vmax = kwargs.get('vmin')  
+
+    # Label for the colorbar
+    cblabel = kwargs.get('cblabel')
+
+    # Axis and title labels
+    xlabel = kwargs.get('xlabel') 
+    ylabel = kwargs.get('ylabel')
     title = kwargs.get('title')
-    ax.set_title(title, fontsize = 25)
 
-    ##setting up x and y lim
-    ax.set_xlim(kwargs.get('xlim'))
-    ax.set_ylim(kwargs.get('ylim'))
+    # Axis limits
+    xlim = kwargs.get('xlim')
+    ylim = kwargs.get('ylim')
 
+    # Labels for secondary axes
+    x2label = kwargs.get('x2label')
+    y2label = kwargs.get('y2label')
 
-    ##setting up secx axis
-    sec_xlabel = kwargs.get('x2label')
-    conversion = kwargs.get('x2secx'), kwargs.get('secx2x')
-    try:
-        secax = ax.secondary_xaxis('top', functions= conversion)
-    except:
-        secax = ax.secondary_xaxis('top', functions= None)
-    secax.set_xlabel(sec_xlabel,fontsize=20)
-    secax.tick_params(axis='x',which='major',labelsize=13)
+    # Functions for x2 axis conversion
+    x2secx = kwargs.get('x2secx')
+    secx2x = kwargs.get('secx2x')
 
-    ##setting up secy axis
-    sec_ylabel = kwargs.get('y2label')
-    conversion = kwargs.get('y2secy'), kwargs.get('secy2y')
-    try:   
-        secay = ax.secondary_xaxis('right', functions= conversion)
-    except:
-        secay = ax.secondary_xaxis('right', functions= None)
-    secay.set_xlabel(sec_ylabel,fontsize=20)
-    secay.tick_params(axis='y',which='major',labelsize=13)
-    
+    # Functions for y2 axis conversion
+    y2secy = kwargs.get('y2secy')
+    secy2y = kwargs.get('secy2y')
+
+    # Create the contour plot
+    cp = ax.contourf(x, y, lossmesh.transpose(), cmap=cmap, levels=levels, zorder=1,
+                    vmin=vmin, vmax=vmax)
+
+    # Set up the colorbar
+    if cblabel:
+        cb = plt.colorbar(cp, orientation='vertical')
+        cb.ax.tick_params(labelsize=16)
+        cb.set_label(label=cblabel, fontsize=fontsize)
+
+    # Set up axis labels and title
+    if xlabel:
+        ax.set_xlabel(xlabel, fontsize=fontsize)
+    if ylabel:
+        ax.set_ylabel(ylabel, fontsize=fontsize)
+    if title:
+        ax.set_title(title, fontsize=fontsize)
+        ax.tick_params(axis='both', which='major', labelsize=ticksize)
+
+    # Set axis limits
+    if xlim:
+        ax.set_xlim(xlim)
+    if ylim:
+        ax.set_ylim(ylim)
+
+    # Set up secondary x-axis
+    if x2label:
+        try:
+            secax = ax.secondary_xaxis('top', functions=(x2secx, secx2x))
+        except:
+            secax = ax.secondary_xaxis('top', functions=None)
+        secax.set_xlabel(x2label, fontsize=fontsize)
+        secax.tick_params(axis='x', which='major', labelsize=ticksize)
+
+    if y2label:
+        try:
+            secay = ax.secondary_yaxis('right', functions=(y2secy, secy2y))
+        except:
+            secay = ax.secondary_yaxis('right', functions=None)
+        secay.set_xlabel(y2label, fontsize=fontsize)
+        secay.tick_params(axis='y', which='major', labelsize=ticksize)
+
     return ax
-
     
 
-def line_on_3D(ax, parameters: tuple, start: float =0, end: float =500, label: str = None, colour: str = None): 
-    m, c, *r = parameters
-    mag_pts = np.arange(start, end)
-    freq_pts = mag_pts * m + c
-    ax.plot(mag_pts, freq_pts, marker = "--", lw=2, label = label, color= colour)
+def line_on_3D(ax, fx: function, parameters: tuple, start: float =0, stop: float =500, label: str = None, colour: str = None): 
+
+    x = np.arange(start= start, stop= stop)
+    y = fx(x, *parameters)
+    ax.plot(x, y, marker = "--", lw=2, label = label, color= colour)
     
     return ax
 
 def pts_on_3D(ax, x: np.ndarray, y: np.ndarray, label: str = None, colour: str = None): 
 
     ax.plot(x, y, marker = "o", lw=2, label = label, color= colour)
+
     return ax
 
+def data_saving():
+    pass
 
+#lambda functions
+expected_freq   = lambda mag                    : mag * 2.0036 * BOHR_MAGNETON / PLANK_CONSTANT * MT_UNIT / GHZ_UNIT
+expected_mag    = lambda freq                   : freq / (2.0036 * BOHR_MAGNETON / PLANK_CONSTANT * MT_UNIT / GHZ_UNIT)
+lorentz         = lambda x, Al, b, a, offsetl   : Al / np.pi * (b / ((x - a)**2 + b**2)) + offsetl
+linear          = lambda x, m, c                : m * x + c
+
+esr_lib = {
+    "vmin"      : 0,
+    "cblabel"   : "absorbtion",
+    "xlabel"    : "magnetic field strength, mT",
+    "ylabel"    : "frequency, GHz",
+    "title"     : "Absortion spectra of DPPH",
+    "x2label"   : "current, A"
+}
 self.magnet()
 self.mag_min()
 self.mag_max()

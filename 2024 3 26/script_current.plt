@@ -48,7 +48,7 @@ name [2] = "small-magnet"
 
 ff(name) = sprintf("stats '%s.txt' nooutput;",name)
 
-set print './Analyse_data/current.json'
+set print './Analyse_data/fitted_current.json'
 print '{'
 print '"',name [1],'"', ' :'
 

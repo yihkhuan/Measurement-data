@@ -16,11 +16,11 @@ filenames = [   4.77,
 
 GHz = 1e9
 
-currents = np.arange(300,601) / 100
+currents = np.arange(0,601) / 100
 # currents = np.arange(1)
 
 
-freq, loss_0 = sp.loss_list(0.15)
+freq, loss_0 = sp.loss_list(0.01)
 for i in tqdm(currents):
     try: freq, loss_ave = sp.loss_list(i)
     except: continue

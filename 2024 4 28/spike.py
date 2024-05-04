@@ -291,13 +291,13 @@ def get_resonator_params(filenames: list, loss_0, magnet_name):
     with open("fitting_params.json", "w") as outfile:
         json.dump(dict_list,outfile)
 
-magnet = ' double-magnet '
-# esrcontour(magnet, True, (current_mag(4.85, magnet),current_mag(5.9, magnet)), (9.45,9.55))
-esrcontour(magnet, True, (current_mag(5.87, magnet),current_mag(5.97, magnet)), (9.55,9.7))
-# esrcontour(magnet, True)
-# print(mag_current(331,' double-magnet '))
-freq, loss0 = loss_list(0.29)
-filename = current_list(5.88,6)
-# filename.append(5.15)
-get_resonator_params(filename, loss0, magnet)
-print(get_g(magnet))
+# magnet = ' double-magnet '
+# # esrcontour(magnet, True, (current_mag(4.85, magnet),current_mag(5.9, magnet)), (9.45,9.55))
+# esrcontour(magnet, True, (current_mag(5.87, magnet),current_mag(5.97, magnet)), (9.55,9.7))
+# # esrcontour(magnet, True)
+# # print(mag_current(331,' double-magnet '))
+# freq, loss0 = loss_list(0.29)
+# filename = current_list(5.88,6)
+# # filename.append(5.15)
+# get_resonator_params(filename, loss0, magnet)
+# print(get_g(magnet))
