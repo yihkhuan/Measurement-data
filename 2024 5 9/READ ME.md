@@ -1,0 +1,1 @@
+UR-5, with no teflon, added in amplifier, electromagnet with 4 black spacers being used.

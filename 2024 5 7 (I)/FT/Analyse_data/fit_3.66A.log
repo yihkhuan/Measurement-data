@@ -1,0 +1,19 @@
+
+
+*******************************************************************************
+Wed May 08 00:28:13 2024
+
+
+FIT:    data read from '3.66A.csv' u 1:2
+        format = x:z
+        x range restricted to [9.80900 : 0.00000]
+BREAK: No data to fit
+
+*******************************************************************************
+Wed May 08 00:29:38 2024
+
+
+FIT:    data read from '3.66A.csv' u 1:2
+        format = x:z
+        x range restricted to [9.80900 : 0.00000]
+BREAK: No data to fit

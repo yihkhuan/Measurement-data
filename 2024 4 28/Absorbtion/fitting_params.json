@@ -1,0 +1,42 @@
+{
+"5.9000" : {
+"resonance-frequency" :  9.56201237406688 ,
+"bandwidth" :  0.0396713416699878 ,
+"amplitude" :  0.00817664523406085
+},
+"5.9100" : {
+"resonance-frequency" :  9.55428970485701 ,
+"bandwidth" :  0.0448656448437084 ,
+"amplitude" :  0.0146561910660169
+},
+"5.9200" : {
+"resonance-frequency" :  9.61567343367131 ,
+"bandwidth" :  0.0241401427094666 ,
+"amplitude" :  0.00474863964246643
+},
+"5.9300" : {
+"resonance-frequency" :  9.61804778512688 ,
+"bandwidth" :  0.0259772096238198 ,
+"amplitude" :  0.00699511236623949
+},
+"5.9400" : {
+"resonance-frequency" :  9.62381961173667 ,
+"bandwidth" :  0.0206277413092564 ,
+"amplitude" :  0.00838312251805941
+},
+"5.9500" : {
+"resonance-frequency" :  9.62438574611124 ,
+"bandwidth" :  0.0221096792973293 ,
+"amplitude" :  0.0102113586791544
+},
+"5.9600" : {
+"resonance-frequency" :  9.62450865781176 ,
+"bandwidth" :  0.0196552440030724 ,
+"amplitude" :  0.00967565532210338
+},
+"5.9700" : {
+"resonance-frequency" :  9.62458457546352 ,
+"bandwidth" :  0.0193827205403296 ,
+"amplitude" :  0.00991230442346496
+}
+}

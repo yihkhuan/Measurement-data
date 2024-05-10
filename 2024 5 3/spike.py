@@ -52,11 +52,11 @@ def average_loss_list(current: float) -> tuple:
     loss = np.average(loss,axis=1)
     return (freq,loss)
 
-def esrcontour(magnet_name, fitting = False, xlim = (0,0), ylim = (0,0)):
+def esrcontour(magnet_name, loss_0: np.ndarray, fitting = False, xlim = (0,0), ylim = (0,0)):
     current = current_list()
     current = np.array(current)
 
-    freq, loss_0 = loss_list(current[0])
+    freq = loss_list(current[0])[0]
     # magnetic = 19.713 * current[1:] + 224.92
     magnetic = current_mag(current[1:],magnet_name)
     B, F = np.meshgrid(magnetic,freq)
@@ -164,10 +164,12 @@ def find(name, path):
             return False
     pass
         
-def lorentzian_fit(freq:np.ndarray, absorption:np.ndarray, freq_expected: float):
-    diff_array = np.abs(freq - freq_expected)
-    index = np.where(diff_array == np.abs(freq - freq_expected).min())[0][0]
-    
+def lorentzian_fit(freq:np.ndarray, absorption:np.ndarray, freq_expected: float = None):
+    if freq_expected:
+        diff_array = np.abs(freq - freq_expected)
+        index = np.where(diff_array == np.abs(freq - freq_expected).min())[0][0]
+    else:
+        index = np.where(absorption == absorption.max())[0][0]
     max_freq = freq[index]
     # print(max_freq)
     # plt.figure()
@@ -175,7 +177,7 @@ def lorentzian_fit(freq:np.ndarray, absorption:np.ndarray, freq_expected: float)
     # plt.show()
     #curve fitting
     dw = 50
-    popt,_ = curve_fit(lorentz, freq[index-dw:index+dw], absorption[index-dw:index+dw],p0=(1,.2,max_freq,0))
+    popt,_ = curve_fit(lorentz, freq, absorption,p0=(2,.02,max_freq,0))
     Al,b,a,offsetl = popt
     return (Al,b,a,offsetl)
 
@@ -268,7 +270,7 @@ def get_resonator_params(filenames: list, loss_0, magnet_name):
         absorption = loss_0 - loss_ave
         try:
             resonance_freq = current_mag(name, magnet_name) * EXPECTED_GRADIENT
-            params = lorentzian_fit(freq, absorption, resonance_freq)
+            params = lorentzian_fit(freq[::10], absorption[::10], resonance_freq)
         except:
             print("fitting failed for " + str(name))
             continue
@@ -284,7 +286,7 @@ def get_resonator_params(filenames: list, loss_0, magnet_name):
         l = lorentz(freq,*params)
         plt.figure()
         # fig[filenames.index(name)], ax[filenames.index(name)] = plt.subplots()
-        plt.scatter(freq,absorption)
+        plt.scatter(freq[::10],absorption[::10])
         
         UTM_2D_plot(freq,l,
                     title = "signal fitting, B = %.2f mT" % current_mag(name, magnet_name),
@@ -295,5 +297,3 @@ def get_resonator_params(filenames: list, loss_0, magnet_name):
         
     with open("fitting_params.json", "w") as outfile:
         json.dump(dict_list,outfile)
-
-print(.05 / EXPECTED_GRADIENT)

@@ -1,0 +1,1 @@
+UR-5 in large permanent magnet. Added teflon with sample in cellophane tape. Current is varied.

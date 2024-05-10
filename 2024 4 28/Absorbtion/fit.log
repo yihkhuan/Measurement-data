@@ -1,0 +1,937 @@
+
+
+*******************************************************************************
+Fri May 10 16:10:51 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.46700e+09 : 9.48200e+09]
+BREAK: No data to fit
+
+*******************************************************************************
+Fri May 10 16:11:55 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.46700 : 9.48200]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.6840527205e+04   0.00e+00  0.00e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+BREAK: Singular matrix in Givens()
+
+*******************************************************************************
+Fri May 10 16:12:59 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.62100 : 9.63600]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 2.0569186234e+04   0.00e+00  0.00e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+BREAK: Singular matrix in Givens()
+
+*******************************************************************************
+Fri May 10 16:13:10 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.55350 : 9.70350]
+        #datapoints = 301
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 1.9628450866e+05   0.00e+00  0.00e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+BREAK: Singular matrix in Givens()
+
+*******************************************************************************
+Fri May 10 16:14:26 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.55350 : 9.70350]
+        #datapoints = 301
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 9.5054612923e+04   0.00e+00  0.00e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+BREAK: Singular matrix in Givens()
+
+*******************************************************************************
+Fri May 10 16:14:46 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.55350 : 9.70350]
+        #datapoints = 301
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 6.3083069056e+04   0.00e+00  0.00e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+BREAK: Singular matrix in Givens()
+
+*******************************************************************************
+Fri May 10 16:15:06 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.55100 : 9.70100]
+        #datapoints = 301
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             offsetl       Al           
+   0 6.3007502045e+04   0.00e+00  0.00e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+BREAK: Singular matrix in Givens()
+
+*******************************************************************************
+Fri May 10 16:15:51 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.55100 : 9.70100]
+        #datapoints = 301
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'offset' is zero.
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     offset        amplitude    
+   0 6.3007502045e+04   0.00e+00  2.40e+03    9.626000e+00   2.000000e-02   1.000000e-30   2.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 10 16:16:05 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.55350 : 9.70350]
+        #datapoints = 301
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'offset' is zero.
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     offset        amplitude    
+   0 6.3083069056e+04   0.00e+00  2.40e+03    9.628500e+00   2.000000e-02   1.000000e-30   2.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 10 16:16:15 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.47850 : 9.77850]
+        #datapoints = 601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'offset' is zero.
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     offset        amplitude    
+   0 6.3701139874e+04   0.00e+00  1.70e+03    9.628500e+00   2.000000e-02   1.000000e-30   2.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 10 16:16:30 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.52850 : 9.72850]
+        #datapoints = 401
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'offset' is zero.
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     offset        amplitude    
+   0 6.3441912723e+04   0.00e+00  2.08e+03    9.628500e+00   2.000000e-02   1.000000e-30   2.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 10 16:16:40 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.57850 : 9.67850]
+        #datapoints = 201
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'offset' is zero.
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     offset        amplitude    
+   0 6.1921141253e+04   0.00e+00  2.92e+03    9.628500e+00   2.000000e-02   1.000000e-30   2.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 10 16:16:55 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.57600 : 9.67600]
+        #datapoints = 201
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'offset' is zero.
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     offset        amplitude    
+   0 6.1855939854e+04   0.00e+00  2.92e+03    9.626000e+00   2.000000e-02   1.000000e-30   2.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 10 16:17:17 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.57600 : 9.67600]
+        #datapoints = 201
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     offset        amplitude    
+   0 6.2465475520e+04   0.00e+00  2.92e+03    9.626000e+00   2.000000e-02  -1.000000e-01   2.000000e+00
+  23 2.0715489437e+00   0.00e+00  2.92e+08    9.678454e+00   2.231088e-02  -4.506611e-02  -2.306533e-02
+
+After 23 iterations the fit converged.
+final sum of squares of residuals : 2.07155
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 197
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.102545
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0105155
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.67845          +/- 0.0197       (0.2036%)
+linewidth       = 0.0223109        +/- 0.005513     (24.71%)
+offset          = -0.0450661       +/- 0.02173      (48.22%)
+amplitude       = -0.0230653       +/- 0.01851      (80.27%)
+
+correlation matrix of the fit parameters:
+                resona linewi offset amplit 
+resonanceFreq   1.000 
+linewidth       0.723  1.000 
+offset         -0.710 -0.871  1.000 
+amplitude      -0.980 -0.827  0.819  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:20:49 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3
+        format = x:z
+        x range restricted to [9.57600 : 9.67600]
+        #datapoints = 201
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x) = amplitude / pi * (linewidth / ((x - resonanceFreq)**2 + linewidth**2)) - offset
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     offset        amplitude    
+   0 6.2465475520e+04   0.00e+00  2.92e+03    9.626000e+00   2.000000e-02  -1.000000e-01   2.000000e+00
+  23 2.0715489437e+00   0.00e+00  2.92e+08    9.678454e+00   2.231088e-02  -4.506611e-02  -2.306533e-02
+
+After 23 iterations the fit converged.
+final sum of squares of residuals : 2.07155
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 197
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.102545
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0105155
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.67845          +/- 0.0197       (0.2036%)
+linewidth       = 0.0223109        +/- 0.005513     (24.71%)
+offset          = -0.0450661       +/- 0.02173      (48.22%)
+amplitude       = -0.0230653       +/- 0.01851      (80.27%)
+
+correlation matrix of the fit parameters:
+                resona linewi offset amplit 
+resonanceFreq   1.000 
+linewidth       0.723  1.000 
+offset         -0.710 -0.871  1.000 
+amplitude      -0.980 -0.827  0.819  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:01 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 3
+        format = x:z
+        x range restricted to [9.53700 : 9.58700]
+        #datapoints = 34
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 1.4146793992e-01   0.00e+00  3.73e+01    9.562000e+00   1.100000e-02   2.000000e-03
+   7 1.4144188909e-01  -5.65e-01  3.73e+02    9.562283e+00   1.100000e-02   2.000000e-03
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.141442
+rel. change during last iteration : -5.64732e-06
+
+degrees of freedom    (FIT_NDF)                        : 31
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0675473
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00456264
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.56228          +/- 0.001949     (0.02038%)
+linewidth       = 0.011            +/- 0.001802     (16.38%)
+amplitude       = 0.002            +/- 0.000257     (12.85%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.381  1.000 
+amplitude       0.031  0.539  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:02 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 3
+        format = x:z
+        x range restricted to [9.53250 : 9.58250]
+        #datapoints = 34
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 8.6046141977e-02   0.00e+00  3.73e+01    9.557500e+00   1.100000e-02   2.000000e-03
+   1 8.6046141977e-02   0.00e+00  3.73e+08    9.557500e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0860461
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 31
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0526847
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00277568
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.5575           +/- 0.001519     (0.0159%)
+linewidth       = 0.011            +/- 0.001408     (12.8%)
+amplitude       = 0.002            +/- 0.0002005    (10.02%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.385  1.000 
+amplitude       0.028  0.540  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:02 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 3
+        format = x:z
+        x range restricted to [9.59350 : 9.64350]
+        #datapoints = 33
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 1.5814501740e-01   0.00e+00  3.78e+01    9.618500e+00   1.100000e-02   2.000000e-03
+   1 1.5814501740e-01   0.00e+00  3.78e+08    9.618500e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.158145
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 30
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0726051
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0052715
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.6185           +/- 0.00211      (0.02193%)
+linewidth       = 0.011            +/- 0.001956     (17.78%)
+amplitude       = 0.002            +/- 0.0002777    (13.89%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.380  1.000 
+amplitude       0.032  0.544  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:02 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 3
+        format = x:z
+        x range restricted to [9.59550 : 9.64550]
+        #datapoints = 34
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 9.7612921054e-02   0.00e+00  3.75e+01    9.620500e+00   1.100000e-02   2.000000e-03
+   1 9.7612921054e-02   0.00e+00  3.75e+08    9.620500e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0976129
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 31
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0561142
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0031488
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.6205           +/- 0.001622     (0.01686%)
+linewidth       = 0.011            +/- 0.001501     (13.64%)
+amplitude       = 0.002            +/- 0.0002135    (10.68%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.387  1.000 
+amplitude       0.028  0.539  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:03 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 3
+        format = x:z
+        x range restricted to [9.60100 : 9.65100]
+        #datapoints = 33
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 3.5761326013e-02   0.00e+00  3.78e+01    9.626000e+00   1.100000e-02   2.000000e-03
+   1 3.5761326013e-02   0.00e+00  3.78e+07    9.626000e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0357613
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 30
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.034526
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00119204
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.626            +/- 0.001004     (0.01043%)
+linewidth       = 0.011            +/- 0.0009301    (8.456%)
+amplitude       = 0.002            +/- 0.0001321    (6.603%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.381  1.000 
+amplitude       0.033  0.544  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:03 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 3
+        format = x:z
+        x range restricted to [9.59950 : 9.64950]
+        #datapoints = 33
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 2.5494579896e-02   0.00e+00  3.78e+01    9.624500e+00   1.100000e-02   2.000000e-03
+   1 2.5494579896e-02   0.00e+00  3.78e+08    9.624500e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0254946
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 30
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0291517
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000849819
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.6245           +/- 0.0008473    (0.008804%)
+linewidth       = 0.011            +/- 0.0007853    (7.139%)
+amplitude       = 0.002            +/- 0.0001115    (5.575%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.381  1.000 
+amplitude       0.032  0.544  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:04 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 3
+        format = x:z
+        x range restricted to [9.60100 : 9.65100]
+        #datapoints = 33
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 2.3482573840e-02   0.00e+00  3.78e+01    9.626000e+00   1.100000e-02   2.000000e-03
+   7 6.1539660762e-03   0.00e+00  3.78e+06    9.623374e+00   1.434694e-02   2.285427e-03
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.00615397
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 30
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0143224
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000205132
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.62337          +/- 0.0005482    (0.005696%)
+linewidth       = 0.0143469        +/- 0.0006086    (4.242%)
+amplitude       = 0.00228543       +/- 7.103e-05    (3.108%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.390  1.000 
+amplitude      -0.102  0.682  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:04 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 3
+        format = x:z
+        x range restricted to [9.60100 : 9.65100]
+        #datapoints = 33
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 1.3319318163e-02   0.00e+00  2.77e+01    9.626000e+00   1.434694e-02   2.285427e-03
+   5 7.2073747448e-03   0.00e+00  2.77e+06    9.623495e+00   1.407957e-02   2.333351e-03
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00720737
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 30
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0154999
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000240246
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.62349          +/- 0.000562     (0.005839%)
+linewidth       = 0.0140796        +/- 0.0006149    (4.367%)
+amplitude       = 0.00233335       +/- 7.501e-05    (3.215%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.386  1.000 
+amplitude      -0.089  0.670  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:32 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 5
+        format = x:z
+        x range restricted to [9.53700 : 9.58700]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 8.4223878705e-02   0.00e+00  3.73e+01    9.562000e+00   1.100000e-02   2.000000e-03
+   1 8.4223878705e-02   0.00e+00  3.73e+08    9.562000e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0842239
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 17
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0703871
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00495435
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.562            +/- 0.002634     (0.02755%)
+linewidth       = 0.011            +/- 0.002427     (22.06%)
+amplitude       = 0.002            +/- 0.0003471    (17.36%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.368  1.000 
+amplitude       0.042  0.542  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:33 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 5
+        format = x:z
+        x range restricted to [9.53250 : 9.58250]
+        #datapoints = 21
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 5.4425289755e-02   0.00e+00  3.69e+01    9.557500e+00   1.100000e-02   2.000000e-03
+   1 5.4425289755e-02   0.00e+00  3.69e+08    9.557500e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0544253
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 18
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0549875
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00302363
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.5575           +/- 0.002039     (0.02133%)
+linewidth       = 0.011            +/- 0.00188      (17.09%)
+amplitude       = 0.002            +/- 0.0002689    (13.45%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.384  1.000 
+amplitude       0.030  0.535  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:33 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 5
+        format = x:z
+        x range restricted to [9.59350 : 9.64350]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 9.4698528121e-02   0.00e+00  3.78e+01    9.618500e+00   1.100000e-02   2.000000e-03
+   1 9.4698528121e-02   0.00e+00  3.78e+08    9.618500e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0946985
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 17
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0746358
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0055705
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.6185           +/- 0.002793     (0.02904%)
+linewidth       = 0.011            +/- 0.002591     (23.55%)
+amplitude       = 0.002            +/- 0.0003677    (18.39%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.385  1.000 
+amplitude       0.029  0.542  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:34 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 5
+        format = x:z
+        x range restricted to [9.59550 : 9.64550]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 5.7797038888e-02   0.00e+00  3.79e+01    9.620500e+00   1.100000e-02   2.000000e-03
+   1 5.7797038888e-02   0.00e+00  3.79e+08    9.620500e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.057797
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 17
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.058308
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00339983
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.6205           +/- 0.002182     (0.02268%)
+linewidth       = 0.011            +/- 0.002032     (18.48%)
+amplitude       = 0.002            +/- 0.0002874    (14.37%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.392  1.000 
+amplitude       0.022  0.543  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:34 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 5
+        format = x:z
+        x range restricted to [9.60100 : 9.65100]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 2.1653707983e-02   0.00e+00  3.78e+01    9.626000e+00   1.100000e-02   2.000000e-03
+   1 2.1653707983e-02   0.00e+00  3.78e+07    9.626000e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0216537
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 17
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0356896
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00127375
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.626            +/- 0.001336     (0.01388%)
+linewidth       = 0.011            +/- 0.001239     (11.26%)
+amplitude       = 0.002            +/- 0.0001758    (8.792%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.385  1.000 
+amplitude       0.029  0.542  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:34 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 5
+        format = x:z
+        x range restricted to [9.59950 : 9.64950]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 1.6230753747e-02   0.00e+00  3.75e+01    9.624500e+00   1.100000e-02   2.000000e-03
+   1 1.6230753747e-02   0.00e+00  3.75e+07    9.624500e+00   1.100000e-02   2.000000e-03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0162308
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 17
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.030899
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00095475
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.6245           +/- 0.001159     (0.01204%)
+linewidth       = 0.011            +/- 0.001066     (9.694%)
+amplitude       = 0.002            +/- 0.0001524    (7.619%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.370  1.000 
+amplitude       0.043  0.541  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:35 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 5
+        format = x:z
+        x range restricted to [9.60100 : 9.65100]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 1.4514714658e-02   0.00e+00  3.78e+01    9.626000e+00   1.100000e-02   2.000000e-03
+   7 4.3101605554e-03   0.00e+00  3.78e+06    9.623321e+00   1.423061e-02   2.275727e-03
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.00431016
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 17
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0159229
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000253539
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.62332          +/- 0.0007781    (0.008086%)
+linewidth       = 0.0142306        +/- 0.0008577    (6.027%)
+amplitude       = 0.00227573       +/- 0.0001005    (4.415%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.401  1.000 
+amplitude      -0.108  0.675  1.000 
+
+
+*******************************************************************************
+Fri May 10 16:47:35 2024
+
+
+FIT:    data read from filename i datablock u ($1*1e-9):3 every 5
+        format = x:z
+        x range restricted to [9.60100 : 9.65100]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = amplitude / (linewidth * (2 * pi)**(1/2)) * exp(-0.5 * ((x-resonanceFreq) / linewidth)**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   resonanceFreq linewidth     amplitude    
+   0 8.8904054653e-03   0.00e+00  2.81e+01    9.626000e+00   1.423061e-02   2.275727e-03
+   6 4.9732227971e-03   0.00e+00  2.81e+05    9.623425e+00   1.395897e-02   2.320130e-03
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.00497322
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 17
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0171039
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000292543
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+resonanceFreq   = 9.62342          +/- 0.0007926    (0.008236%)
+linewidth       = 0.013959         +/- 0.0008612    (6.17%)
+amplitude       = 0.00232013       +/- 0.0001054    (4.541%)
+
+correlation matrix of the fit parameters:
+                resona linewi amplit 
+resonanceFreq   1.000 
+linewidth      -0.397  1.000 
+amplitude      -0.095  0.663  1.000 

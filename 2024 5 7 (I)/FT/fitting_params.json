@@ -1,0 +1,6 @@
+{"3.65": {"amplitude": 0.0006949770239159577, "bandwidth": 0.0013437362180794953, "resonance-frequency": 9.799827039459554, "offset": -0.1},
+ "3.66": {"amplitude": 0.0008301683399911104, "bandwidth": 0.0011332958704621287, "resonance-frequency": 9.799693831379914, "offset": -0.1},
+ "3.67": {"amplitude": 0.0006676679038317605, "bandwidth": 0.0011379109208464455, "resonance-frequency": 9.79958454263529, "offset": -0.1},
+ "3.68": {"amplitude": 0.0004542540177197868, "bandwidth": 0.0010812228060210487, "resonance-frequency": 9.799962773125648, "offset": -0.1}, 
+ "3.69": {"amplitude": 0.0004224379246146249, "bandwidth": 0.0016060594737933394, "resonance-frequency": 9.799560621600296, "offset": -0.1}, 
+ "3.70": {"amplitude": 0.00028420476745676077, "bandwidth": 0.0014959786505412344, "resonance-frequency": 9.799132584219558, "offset": -0.1}}

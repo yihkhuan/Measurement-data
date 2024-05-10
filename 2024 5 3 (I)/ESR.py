@@ -16,23 +16,53 @@ filenames = [   4.77,
 
 GHz = 1e9
 
-currents = np.arange(300,601) / 100
+currents = np.arange(563, 582) / 100
 # currents = np.arange(1)
 
 
-freq, loss_0 = sp.loss_list(0.44)
+# print(max_freq)
+# plt.figure()
+# plt.scatter(freq,absorption)
+# plt.show()
+#curve fitting
+dw = 3
+slicer = 1
+magnet = ' double-magnet '
+
+freq, loss_0 = sp.loss_list(5.92)
 for i in tqdm(currents):
     try: freq, loss_ave = sp.loss_list(i)
     except: continue
     absorption = loss_0 - loss_ave
+    absorption = absorption[::slicer]
+    freq = freq[::slicer]
+    index = np.where(absorption == absorption.max())[0][0]
+    max_freq = freq[index]
+
+
     plt.figure()
     plt.ylabel("absorbtion, dB")
     plt.xlabel("Frequency, GHz")
-    B = sp.current_mag(i,' double-magnet ')
+    B = sp.current_mag(i, magnet)
     plt.title("B0 = %.2f mT" % (B))
     # plt.xlim((8.6, 9.8))
-    plt.plot(freq,absorption)
+    plt.scatter(freq,absorption, marker="+")
+    plt.plot(freq[index - dw:index + dw + 1], absorption[index - dw:index + dw + 1])
     plt.savefig("./figs/%.2fA.png" % (i))
+    plt.close()
+
+    plt.figure()
+    plt.ylabel("absorbtion, mW")
+    plt.xlabel("Frequency, GHz")
+    B = sp.current_mag(i, magnet)
+    plt.title("B0 = %.2f mT" % (B))
+    # plt.xlim((8.6, 9.8))
+    plt.scatter(freq, 10 ** (absorption * 10), marker="+")
+    # plt.plot(freq[index - dw:index + dw + 1], absorption[index - dw:index + dw + 1])
+    plt.savefig("./figs/linear %.2fA.png" % (i))
+    plt.close()
+
+
 
 fig = []
 ax = []

@@ -5,7 +5,7 @@ def testing(arg,args, **kwargs):
         print(kwargs.get('a'))
 
 tup = (77, "bb")
-testing(65, tup, a = "jj")
+testing(*tup, a = "jj")
 import numpy as np
 x = np.linspace(0,np.pi, 100)
 y = np.sin(x)
@@ -24,3 +24,6 @@ print(type(z))
 
 plt.show()
 plt.close()
+
+# for ele in enumerate(x):
+#     print(ele)

@@ -1,0 +1,1 @@
+Using only electromagnet, sample in cellophone tape with teflon, no spacers in between resonator.

@@ -20,7 +20,7 @@ currents = np.arange(000,601) / 100
 # currents = np.arange(1)
 
 
-freq, loss_0 = sp.loss_list(0.44)
+freq, loss_0 = sp.loss_list(5.44)
 for i in tqdm(currents):
     try: freq, loss_ave = sp.loss_list(i)
     except: continue
@@ -31,7 +31,7 @@ for i in tqdm(currents):
     B = sp.current_mag(i,' double-magnet ')
     plt.title("B0 = %.2f mT" % (B))
     # plt.xlim((8.6, 9.8))
-    plt.plot(freq,absorption)
+    plt.plot(freq[::10],absorption[::10])
     plt.savefig("./figs/%.2fA.png" % (i))
 
 fig = []
