@@ -184,7 +184,7 @@ def mag_current(mag,magnet_name):
     return (mag - c)/m 
 
 def current_list(start: float = 0, end: float = 15):
-
+    find_all("A.csv")
     currents = np.arange(start*100,end*100) / 100
     current = []
     for i in tqdm(currents):
@@ -261,7 +261,6 @@ def esr_contour(magnetic_field, freq, lossmesh, fitting = False, xlim = (0,0), y
 
 # def lorentz(x: np.ndarray, Al:float, b:float, a:float, offsetl:float) -> np.ndarray:
 #     return Al / np.pi * (b / ((x - a)**2 + b**2)) + offsetl
-
 
 def UTM_3D_plot(x: np.ndarray, y: np.ndarray, lossmesh: np.ndarray, ax: plt.Axes, *,
                 cmap: str = 'rainbow',  # Colormap for the contour plot
@@ -375,7 +374,6 @@ def UTM_3D_plot(x: np.ndarray, y: np.ndarray, lossmesh: np.ndarray, ax: plt.Axes
 
     return ax
     
-
 def line_on_3D(ax, fx, parameters: tuple, start: float =0, stop: float =500, label: str = None, colour: str = None): 
 
     x = np.arange(start= start, stop= stop)
@@ -390,9 +388,17 @@ def pts_on_3D(ax, x: np.ndarray, y: np.ndarray, label: str = None, colour: str =
 
     return ax
 
-def data_saving(namelists: list):
+# def saveData(data, dictionary, keyword):
+
     
-    pass
+    # dictionary.update({"%.3f" % (name): {
+    #                 "amplitude"           : params[0],
+    #                 "bandwidth"           : params[1],
+    #                 "resonance-frequency" : params[2],
+    #                 "offset"              : params[3]  
+    #                 }
+    #             })
+    # pass
 
 #lambda functions
 expected_freq   = lambda mag                    : mag * 2.0036 * BOHR_MAGNETON / PLANK_CONSTANT * MT_UNIT / GHZ_UNIT
@@ -408,6 +414,16 @@ esr_lib = {
     "title"     : "Absortion spectra of DPPH",
     "x2label"   : "current, A"
 }
+
+# lib = {
+#     "variable"  : "current",
+#     "description": "teflon",
+#     "resonator" :   "UR-4",
+#     "magnet"    :   "double-magnet",
+#     "data"      :      {{12 :   [4,5,6]},
+#                         {13 :   [4,5,6]},
+#                         }
+# }
 # self.magnet()
 # self.mag_min()
 # self.mag_max()

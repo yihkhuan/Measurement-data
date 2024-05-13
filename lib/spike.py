@@ -14,7 +14,7 @@ class SpectrumAnalyzer:
     def __init__(self):
         self.handle = sa_open_device()["handle"]
         try:
-            sa_attach_tg()
+            sa_attach_tg(self.handle)
         except:
             pass
         
@@ -23,7 +23,7 @@ class SpectrumAnalyzer:
         # sa_config_gain_atten(self.handle, SA_AUTO_ATTEN, SA_AUTO_GAIN)
         sa_config_level(self.handle, level)
         sa_config_sweep_coupling(self.handle, 10e3, 10e3, False)
-        sa_config_acquisition(self.handle, SA_MIN_MAX, SA_LOG_SCALE)
+        sa_config_acquisition(self.handle, SA_AVERAGE, SA_LOG_SCALE)
 
     def fetch_xarray(self):
         """Fetches the frequencies measured.
@@ -51,7 +51,7 @@ class SpectrumAnalyzer:
         if parameters:
             sa_config_center_span(self.handle, *parameters)
 
-        res = sa_get_sweep_32f(self.handle)["min"]
+        res = sa_get_sweep_32f(self.handle)["max"]
         return res
     
     def stor_thru(self, flag: int):
@@ -66,3 +66,4 @@ class SpectrumAnalyzer:
 
     def level(self, level):
         sa_config_level(self.handle, level)
+

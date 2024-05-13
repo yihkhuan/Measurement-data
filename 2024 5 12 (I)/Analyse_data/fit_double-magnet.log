@@ -1,0 +1,252 @@
+
+
+*******************************************************************************
+Wed Apr 17 17:59:19 2024
+
+
+FIT:    data read from 'double-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 8
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 5.0631950860e+05   0.00e+00  3.55e+01    1.000000e+00   5.000000e+01
+   5 4.6144142358e+00  -7.68e-07  3.55e-04    1.757339e+01   2.208946e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.61441
+rel. change during last iteration : -7.68184e-12
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.876966
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.769069
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 17.5734          +/- 0.1696       (0.9651%)
+c               = 220.895          +/- 0.8644       (0.3913%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.933  1.000 
+
+
+*******************************************************************************
+Wed Apr 17 19:43:51 2024
+
+
+FIT:    data read from 'double-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 5.5856190810e+05   0.00e+00  3.55e+01    1.000000e+00   5.000000e+01
+   5 4.4644824879e+02  -5.38e-07  3.55e-04    6.203783e+00   3.073027e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 446.448
+rel. change during last iteration : -5.3751e-12
+
+degrees of freedom    (FIT_NDF)                        : 5
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 9.44932
+variance of residuals (reduced chisquare) = WSSR/ndf   : 89.2896
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 6.20378          +/- 4.271        (68.84%)
+c               = 307.303          +/- 20.85        (6.785%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.985  1.000 
+
+
+*******************************************************************************
+Wed Apr 17 19:47:19 2024
+
+
+FIT:    data read from 'double-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 5.5968402810e+05   0.00e+00  3.55e+01    1.000000e+00   5.000000e+01
+   5 1.5948098882e+00  -7.35e-02  3.55e-04    1.939208e+01   2.494075e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.59481
+rel. change during last iteration : -7.35025e-07
+
+degrees of freedom    (FIT_NDF)                        : 5
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.564767
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.318962
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 19.3921          +/- 0.4352       (2.244%)
+c               = 249.408          +/- 1.981        (0.7941%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.994  1.000 
+
+
+*******************************************************************************
+Fri Apr 19 14:15:37 2024
+
+
+FIT:    data read from 'double-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 6.8214495570e+05   0.00e+00  3.56e+01    1.000000e+00   5.000000e+01
+   5 2.1223087476e+00  -1.08e-06  3.56e-04    1.817685e+01   2.369240e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.12231
+rel. change during last iteration : -1.08395e-11
+
+degrees of freedom    (FIT_NDF)                        : 7
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.550624
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.303187
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 18.1769          +/- 0.1005       (0.5531%)
+c               = 236.924          +/- 0.539        (0.2275%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.940  1.000 
+
+
+*******************************************************************************
+Sun May 12 15:03:25 2024
+
+
+FIT:    data read from 'double-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 12
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 7.8665488159e+05   0.00e+00  3.55e+01    1.000000e+00   5.000000e+01
+   4 7.7945495693e+03  -1.11e-01  3.55e-03    2.089302e+01   2.385172e+02
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7794.55
+rel. change during last iteration : -1.10629e-06
+
+degrees of freedom    (FIT_NDF)                        : 10
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 27.9187
+variance of residuals (reduced chisquare) = WSSR/ndf   : 779.455
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 20.893           +/- 4.459        (21.34%)
+c               = 238.517          +/- 16.4         (6.874%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.871  1.000 
+
+
+*******************************************************************************
+Sun May 12 15:13:14 2024
+
+
+FIT:    data read from 'double-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 14
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 1.1658905549e+06   0.00e+00  3.55e+01    1.000000e+00   5.000000e+01
+   5 1.2004802446e+00  -2.45e-04  3.55e-04    2.005985e+01   2.468347e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.20048
+rel. change during last iteration : -2.44796e-09
+
+degrees of freedom    (FIT_NDF)                        : 12
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.316291
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.10004
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 20.0599          +/- 0.1011       (0.5038%)
+c               = 246.835          +/- 0.4914       (0.1991%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.985  1.000 
+
+
+*******************************************************************************
+Sun May 12 15:35:01 2024
+
+
+FIT:    data read from 'double-magnet.txt' u 1:2
+        format = x:z
+        #datapoints = 14
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 1.1658905549e+06   0.00e+00  3.55e+01    1.000000e+00   5.000000e+01
+   5 1.2004802446e+00  -2.45e-04  3.55e-04    2.005985e+01   2.468347e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.20048
+rel. change during last iteration : -2.44796e-09
+
+degrees of freedom    (FIT_NDF)                        : 12
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.316291
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.10004
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 20.0599          +/- 0.1011       (0.5038%)
+c               = 246.835          +/- 0.4914       (0.1991%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.985  1.000 

@@ -1,9 +1,10 @@
 {
     "variable": "",
+    "description": "teflon",
+    "resonator" :   "UR-4",
+    "magnet"    :   "double-magnet",
     "xdata": [],
     "ydata": [],
-    "zdata":{
-        "x.xx": [],
-        "y.yy": []
-    }
+    "zdata":[[],
+             []]
 }

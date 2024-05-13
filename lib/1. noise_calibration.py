@@ -9,12 +9,12 @@ GHZ_UNIT = 1e9
 MHZ_UNIT = 1e6
 sa = SpectrumAnalyzer()
 
-sa.setup(9.68 * GHZ_UNIT, 1.0 * GHZ_UNIT, 16.0)
+sa.setup(9.67 * GHZ_UNIT, 1.0 * GHZ_UNIT, -10.0)
 
-sa.tg_sweep_points(600)
+sa.tg_sweep_points(1000)
 
 freq = sa.fetch_xarray()
-spectrum = sa.scan()
+
 
 
 plt.figure()
@@ -24,10 +24,12 @@ plt.figure()
 # plt.close()
 print(freq.shape, freq[0]/MHZ_UNIT, freq[-1]/MHZ_UNIT, (freq[1] - freq[0])/MHZ_UNIT)
 
+for i in tqdm(range(50)):
+    spectrum = sa.scan()
 
 sa.stor_thru(1)
 sleep(5)
-spectrum = sa.scan()
+# spectrum = sa.scan()
 # plt.figure()
 # plt.plot(freq / GHZ_UNIT, spectrum)
 # # plt.savefig("./figs/Noise_calibration/before_zero.png")
@@ -35,7 +37,7 @@ spectrum = sa.scan()
 # plt.close()
 
 
-sa.stor_thru(2)
+# sa.stor_thru(2)
 
 # spectrum = sa.scan()
 # plt.figure()
@@ -48,7 +50,7 @@ sa.stor_thru(2)
 
 not_0DB = False #Change after first time storing
 results = np.array([])
-t = np.ones(20)
+t = np.ones(50)
 stay = True
 while stay:
     name = float(input("Enter voltage: "))
