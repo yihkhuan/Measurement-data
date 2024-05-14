@@ -158,8 +158,8 @@ def esrcontour(magnet_name, loss_0: np.ndarray, current_list, fitting = False, x
     
     expected_freq = lambda mag: mag * 2.0036 * BOHR_MAGNETON / PLANK_CONSTANT * mT / GHz
     expected_mag = lambda freq: freq / (2.0036 * BOHR_MAGNETON / PLANK_CONSTANT * mT / GHz)
-    ax.plot(mag_pts, expected_freq(mag_pts), "r--", lw=2, label = "expected fit")
-    ax.plot(expected_mag(resonator_freq),resonator_freq,"ro", label = "expected maximum absorption")
+    ax.plot(mag_pts, np.ones(mag_pts.shape[-1] * resonator_freq), "r--", lw=2, label = "resonance frequency")
+    # ax.plot(expected_mag(resonator_freq),resonator_freq,"ro", label = "expected maximum absorption")
 
     plt.legend()
     plt.tight_layout()
@@ -320,3 +320,23 @@ def get_resonator_params(filenames: list, loss_0, magnet_name):
         
     with open("fitting_params.json", "w") as outfile:
         json.dump(dict_list,outfile)
+
+def current_decider(magnet_name):
+    
+    with open("./Analyse_data/fitted.json","r") as g:
+        resonator = json.load(g)
+
+    resonator_freq = resonator["fitted_data"][0].get('a')[0]
+
+    # print((resonator_freq * 1e-3)/ EXPECTED_GRADIENT)
+    output = (mag_current((resonator_freq - 50 * 1e-3)/ (EXPECTED_GRADIENT), magnet_name), mag_current((resonator_freq + 50 * 1e-3)/ (EXPECTED_GRADIENT), magnet_name))
+
+    return output
+
+def current_diff(magnet_name):
+    with open('./Analyse_data/current.json', 'r') as f:
+        fitted_current = json.load(f)
+
+        m = fitted_current[magnet_name].get('m')[0]
+    m = float(m)    
+    return (50 * 1e-3) / EXPECTED_GRADIENT / m

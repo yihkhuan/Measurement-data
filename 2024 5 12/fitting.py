@@ -5,7 +5,7 @@ magnet = ' double-magnet '
 
 # esrcontour(magnet, True)
 # print(mag_current(331,' double-magnet '))
-freq, loss0 = sp.loss_list(4.825)
+freq, loss0 = sp.loss_list(4.702)
 filename = sp.current_list(4.807, 4.984)
 # filename = sp.current_list(5.62,5.68)
 # filename.append(5.15)

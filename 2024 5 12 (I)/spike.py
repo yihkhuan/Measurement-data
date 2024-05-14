@@ -10,7 +10,7 @@ GHz = 1e9
 mT = 1e-3
 PLANK_CONSTANT = 6.626e-34
 BOHR_MAGNETON = 9.27e-24
-EXPECTED_GRADIENT = 2.08 * BOHR_MAGNETON / PLANK_CONSTANT * mT / GHz
+EXPECTED_GRADIENT = 2.0036 * BOHR_MAGNETON / PLANK_CONSTANT * mT / GHz
 
 def loss_list(current: float) -> tuple: 
     freq = np.array([])
@@ -320,3 +320,23 @@ def get_resonator_params(filenames: list, loss_0, magnet_name):
         
     with open("fitting_params.json", "w") as outfile:
         json.dump(dict_list,outfile)
+
+def current_decider(magnet_name):
+    
+    with open("./Analyse_data/fitted.json","r") as g:
+        resonator = json.load(g)
+
+    resonator_freq = resonator["fitted_data"][0].get('a')[0]
+
+    # print((resonator_freq * 1e-3)/ EXPECTED_GRADIENT)
+    output = (mag_current((resonator_freq - 50 * 1e-3)/ (EXPECTED_GRADIENT), magnet_name), mag_current((resonator_freq + 50 * 1e-3)/ (EXPECTED_GRADIENT), magnet_name))
+
+    return output
+
+def current_diff(magnet_name):
+    with open('./Analyse_data/current.json', 'r') as f:
+        fitted_current = json.load(f)
+
+        m = fitted_current[magnet_name].get('m')[0]
+        
+    print((50 * 1e-3)/ EXPECTED_GRADIENT/m)
