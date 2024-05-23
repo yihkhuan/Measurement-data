@@ -9,9 +9,9 @@ GHZ_UNIT = 1e9
 MHZ_UNIT = 1e6
 sa = SpectrumAnalyzer()
 
-sa.setup(9.67 * GHZ_UNIT, 1.0 * GHZ_UNIT, -10.0)
+sa.setup(9.616 * GHZ_UNIT, 100.0 * MHZ_UNIT, -10.0)
 
-sa.tg_sweep_points(1000)
+sa.tg_sweep_points(500)
 
 freq = sa.fetch_xarray()
 
@@ -19,7 +19,7 @@ freq = sa.fetch_xarray()
 
 plt.figure()
 date_time = datetime.datetime.now()
-outputFile = f"{date_time.year}_{date_time.month}_{date_time.day}-{date_time.hour}{date_time.minute}"
+outputFile = f"{date_time.year}_{date_time.month}_{date_time.day}-{date_time.hour}{date_time.minute}.csv"
 np.savetxt(outputFile, [])
 
 with open(outputFile, "ab") as output:
@@ -33,9 +33,11 @@ output.close()
 # plt.close()
 print(freq.shape, freq[0]/MHZ_UNIT, freq[-1]/MHZ_UNIT, (freq[1] - freq[0])/MHZ_UNIT)
 
+sa.scan()
+sa.stor_thru(1)
+
 for i in tqdm(range(100)):
     spectrum = sa.scan()
-
 sa.stor_thru(1)
 sleep(5)
 # spectrum = sa.scan()
@@ -59,7 +61,7 @@ sleep(5)
 
 not_0DB = False #Change after first time storing
 results = np.array([])
-t = np.ones(100)
+t = np.ones(50)
 stay = True
 while stay:
     name = float(input("Enter voltage: "))
@@ -96,7 +98,7 @@ while stay:
     with open(outputFile, "ab") as output:
         output.write(b"\n")
         output.write(b"\n")
-        np.savetxt(output, spectrum.transpose(), header = name)
+        np.savetxt(output, spectrum.transpose(), header = str(name))
     output.close()
     
     try:

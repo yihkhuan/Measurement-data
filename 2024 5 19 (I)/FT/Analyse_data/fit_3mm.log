@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Thu May 09 17:16:25 2024
+
+
+FIT:    data read from '3mm.txt' u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x) = m * x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 8.2230036842e+05   0.00e+00  3.55e+01    1.000000e+00   5.000000e+01
+   7 1.0906893132e+00  -7.55e-09  3.55e-06    7.655591e+01   1.597421e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 1.09069
+rel. change during last iteration : -7.55289e-14
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.369237
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.136336
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 76.5559          +/- 6.5          (8.491%)
+c               = 15.9742          +/- 27.6         (172.8%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -1.000  1.000 

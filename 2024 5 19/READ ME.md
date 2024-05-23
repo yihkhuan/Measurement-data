@@ -1,0 +1,1 @@
+UR-4, with no teflon, electromagnet and big magnet spaced with 1 mm.

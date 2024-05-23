@@ -1,0 +1,1 @@
+UR-4, with no teflon, electromagnet and config C resonator at center.

@@ -159,6 +159,7 @@ def split_datablock(filename: str, delimiter: str = "") -> tuple[list, np.ndarra
     y_all.append(y_data)
 
   # Convert data lists to NumPy arrays
+#   print(len(x_all[0]))
   x = np.array(x_all)
   y = np.array(y_all)
 
